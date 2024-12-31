@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import EasyAccess from "@site/src/components/EasyAccess";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -38,6 +39,7 @@ export default function Home(): JSX.Element {
       description="فرز ارائه  دهنده سرویس احراز هویت با استفاده از تماس ناموفق">
       <HomepageHeader />
       <main>
+        <EasyAccess />
         <HomepageFeatures />
       </main>
     </Layout>
