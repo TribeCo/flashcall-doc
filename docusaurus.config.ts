@@ -5,12 +5,12 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "فلش کال",
-  tagline: "ما خیلی خفنیم!",
+  title: "فرز!",
+  tagline: "<< سریع، امن و بصرفه >>",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://docs.flashcall.ir",
+  url: "https://docs.ferzz.ir",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Tribe", // Usually your GitHub org/user name.
-  projectName: "flashcall-documents", // Usually your repo name.
+  projectName: "ferzz-documents", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -74,9 +74,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "فلش کال",
+      title: "FERZZ",
       logo: {
-        alt: "flashcall logo",
+        alt: "Ferzz logo",
         src: "img/logo.svg",
       },
       items: [
@@ -135,7 +135,7 @@ const config: Config = {
         //   ],
         // },
       ],
-      copyright: `© ${new Date().getFullYear()} فلش کال. تمامی حقوق محفوظ است.`,
+      copyright: `© ${new Date().getFullYear()}  فرز، تمامی حقوق محفوظ است.`,
     },
     prism: {
       theme: prismThemes.github,
