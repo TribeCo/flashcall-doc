@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="فلش کال ارائه  دهنده سرویس احراز هویت با استفاده از تماس ناموفق">
+      description="فرز ارائه  دهنده سرویس احراز هویت با استفاده از تماس ناموفق">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
