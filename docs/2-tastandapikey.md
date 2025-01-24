@@ -9,7 +9,7 @@ sidebar_position: 1
  در ویدئو زیر نحوه ایجاد سرویس و کلید دسترسی به طور کامل شرح داده شده است.
 
 <div>
-<video controls width="400" height="225">
+<video controls width="900" height="500">
     <source src="https://www.dropbox.com/scl/fi/dplk6sgcxed90b3ucvct2/4.mp4?rlkey=muzi1yglmdozadssusitttu3u&raw=1
     " type="video/mp4" />
     مرورگر شما از ویدیو پشتیبانی نمی‌کند.
