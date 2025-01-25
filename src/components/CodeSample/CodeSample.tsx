@@ -1,26 +1,26 @@
 import React from "react";
+import { useColorMode } from "@docusaurus/theme-common";
 
-const CodeSample: React.FC = () => {
+interface CodeSampleProps {
+  code: string;
+}
+
+const CodeSample: React.FC = ({ code }: CodeSampleProps) => {
+  const { colorMode } = useColorMode();
+
+  const isDarkTheme = colorMode === "dark";
+
   return (
     <pre
       style={{
-        background: "#f4f4f4",
+        backgroundColor: isDarkTheme ? "#2d2d2d" : "#f4f4f4",
+        color: isDarkTheme ? "#ffffff" : "#000000",
         padding: "15px",
         borderRadius: "8px",
         overflowX: "auto",
       }}
     >
-      <code>
-        {`import requests
-
-url = "https://flash-call2.liara.run/services/call/call/"
-payload = {
-  "destination": "09123456789",
-  "token": "YOUR_ACCESS_TOKEN"
-}
-response = requests.post(url, json=payload)
-print(response.json())`}
-      </code>
+      <code>{code}</code>
     </pre>
   );
 };
