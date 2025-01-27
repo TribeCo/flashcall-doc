@@ -22,7 +22,6 @@
     "@mdx-js/react": "^3.0.0",
     "@mui/material": "^6.4.1",
     "clsx": "^2.0.0",
-    "js-beautify": "^1.15.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useColorMode } from "@docusaurus/theme-common";
 import { Highlight, themes } from "prism-react-renderer";
-import beautify from "js-beautify";
 import { Box, Tab, Tabs } from "@mui/material";
 
 interface CodeSampleProps {
@@ -44,20 +43,6 @@ const CodeSample: React.FC<CodeSampleProps> = ({
   const theme = colorMode === "dark" ? themes.vsDark : themes.github;
   const [value, setValue] = React.useState(0);
 
-  // useEffect(() => {
-  //   // Format code based on language
-  //   let formatted = samples[value].code;
-
-  //   if (samples[value].language === "python") {
-  //     formatted = beautify(samples[value].code, {
-  //       indent_size: 4,
-  //       space_in_empty_paren: true,
-  //     });
-  //   } else if (samples[value].language === "nodejs") {
-  //     formatted = beautify.js(samples[value].code, { indent_size: 2 });
-  //   }
-  // }, [value]);
-
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -69,6 +54,7 @@ const CodeSample: React.FC<CodeSampleProps> = ({
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
+          textColor="inherit"
         >
           {samples.map((sample, index) => (
             <Tab key={index} label={sample.language} {...a11yProps(index)} />
@@ -81,7 +67,7 @@ const CodeSample: React.FC<CodeSampleProps> = ({
         <CustomTabPanel value={value} index={index} key={index}>
           <Highlight
             code={sample.code}
-            language={sample.language}
+            language={sample.language == "nodejs" ? "jsx" : sample.language}
             theme={theme}
           >
             {({ className, style, tokens, getLineProps, getTokenProps }) => (

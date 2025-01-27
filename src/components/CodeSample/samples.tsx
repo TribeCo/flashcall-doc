@@ -27,33 +27,33 @@ else:
   {
     code: `const axios = require('axios');
 
-    // URL of the Flash Call service
-    const url = 'https://flash-call.liara.run/services/call/call/';
+// URL of the Flash Call service
+const url = 'https://flash-call.liara.run/services/call/call/';
     
-    // Request payload
-    const payload = {
-      destination: '09303016386', // Replace with the target phone number
-      token: 'Ih.nMOjBv3WyvtRdnHnFzGmt.foqm0O7gFBAm', // Replace with your access token
-    };
+// Request payload
+const payload = {
+    destination: '09303016386', // Replace with the target phone number
+    token: 'Ih.nMOjBv3WyvtRdnHnFzGmt.foqm0O7gFBAm', // Replace with your access token
+};
     
-    // Send a POST request
-    axios
-      .post(url, payload)
-      .then((response) => {
-        console.log('Call initiated successfully!');
-        console.log('Server response:', response.data); // Display the server response
-      })
-      .catch((error) => {
-        if (error.response) {
-          // The request was made, but the server responded with an error
-          console.log('Failed to initiate the call!');
-          console.log('Status code:', error.response.status);
-          console.log('Server response:', error.response.data); // Display the error message
-        } else {
-          // Something went wrong while making the request
-          console.log('Error sending request:', error.message);
-        }
-      });`,
+// Send a POST request
+axios
+    .post(url, payload)
+    .then((response) => {
+    console.log('Call initiated successfully!');
+    console.log('Server response:', response.data); // Display the server response
+    })
+    .catch((error) => {
+     if (error.response) {
+        // The request was made, but the server responded with an error
+        console.log('Failed to initiate the call!');
+        console.log('Status code:', error.response.status);
+        console.log('Server response:', error.response.data); // Display the error message
+    } else {
+        // Something went wrong while making the request
+        console.log('Error sending request:', error.message);
+    }
+});`,
     language: "nodejs",
   },
   {
@@ -115,7 +115,7 @@ func main() {
 		fmt.Println("Server response:", string(body)) // Display the error message
 	}
 }`,
-    language: "golang",
+    language: "go",
   },
 ];
 
