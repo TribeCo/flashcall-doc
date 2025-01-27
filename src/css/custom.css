@@ -43,11 +43,22 @@
 
 @font-face {
   font-family: "Vazirmatn";
-  src: url("/fonts/Vazirmatn.woff2") format("woff2"), url("/fonts/Vazirmatn.woff") format("woff");
+  src: url("/fonts/Vazirmatn.woff2") format("woff2"),
+    url("/fonts/Vazirmatn.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   font-family: "Vazirmatn";
+}
+
+/* Apply Vazirmatn font to all headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vazirmatn", sans-serif;
 }
