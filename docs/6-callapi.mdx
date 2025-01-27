@@ -4,6 +4,7 @@ sidebar_position: 1
 
 
 import CodeSample from '../src/components/CodeSample/CodeSample.tsx';
+import samples from '../src/components/CodeSample/samples.tsx';
 
 # راهنمای درخواست برقراری تک‌زنگ (Call API)
 
@@ -69,4 +70,5 @@ import CodeSample from '../src/components/CodeSample/CodeSample.tsx';
 
 در زیر یک نمونه کد ساده به زبان پایتون برای مثال قرار داده شده است که در آن به api تماس فلش‌کال درخواست زده می‌شود. بسته به زبان برنامه نویسی و پلتفرمی که توسعه می‌دهید، سینتکس کد شما ممکن است متفاوت باشد اما منطق کلی آن از کد زیر تبعیت خواهد کرد:
 
-<CodeSample code={'import requests url = "https://flash-call2.liara.run/services/call/call/" payload = { "destination": "09123456789", "token": "YOUR_ACCESS_TOKEN" } response = requests.post(url, json=payload) print(response.json())'} language = "python" />
+
+<CodeSample samples={samples} />
