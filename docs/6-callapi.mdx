@@ -22,9 +22,12 @@ import samples from '../src/components/CodeSample/samples.tsx';
 
 در بدنه درخواست، شماره تلفن مقصد به همراه کلید دسترسی را به فرمت زیر قرار دهید.
 
-<div>
-  <img src="https://i.imgur.com/XUFIKjI.png" />
-</div>
+<CodeSample samples={[{code: `{
+  "destination": "string",
+  "token": "string"
+}
+`, language: "json"}]} />
+
 # مقصد (destination):
 شماره تلفن کاربری است که می‌خواهید به او تک‌زنگ زده شود
 # توکن (token) :
@@ -36,9 +39,14 @@ import samples from '../src/components/CodeSample/samples.tsx';
 
 پاسخی که بعد از درخواست زدن دریافت خواهید کرد به فرمت زیر است:
 
-<div>
-  <img src="https://i.imgur.com/WZC7xqI.png" />
-</div>
+<CodeSample samples={[{code: `{
+  "message": "string",
+  "code": "string",
+  "tracking_code": "string",
+  "head_number": "string"
+}
+
+`, language: "json"}]} />
 
 # پیام (message) :
 
