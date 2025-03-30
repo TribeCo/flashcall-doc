@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "فرز!",
-  tagline: "<< سریع، امن و بصرفه >>",
+  tagline: "<< سریع، امن، بصرفه >>",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
